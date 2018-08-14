@@ -5,16 +5,28 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
     Button secondSecreenButton;
+    TextView textView;
+    String received;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        //Uygulamam basladiginda methodumu tanimliyorum.
+        textView = (TextView) findViewById(R.id.textView);
+
+        //putExtra ile koydugumuz degeri getStringExtra() ile aliyoruz.
+        //icerisine put ederken yazdigimiz name'i yaziyoruz.
+        //donen degerimi string bir degiskene atiyorum.
+        Bundle bundle = getIntent().getExtras();
+        received = bundle.getString("input");
+        //textView'e gelen degeri set ediyorum.
+        textView.setText(received);
+
         changeActivity();
     }
 
@@ -33,6 +45,7 @@ public class SecondActivity extends AppCompatActivity {
                 //Ikinci parametre ise hangi activitiy'e gececeksek o classin adini yazip class anahtar kelimesi getiriyoruz.
                 //Birinci parametrete getApplicationContext() deyip de yapabiliriz. İkiside aynı şeyi ifade ediyor.
                 Intent ıntent = new Intent(SecondActivity.this, MainActivity.class);
+
 
                 //ve activity'i baslatiyoruz.
                 startActivity(ıntent);
