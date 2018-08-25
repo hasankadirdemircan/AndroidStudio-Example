@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#722809"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:gravity="top|center"
+            android:background="#E7F760">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/pett"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#203040"
+                android:text="PET E-KARNESİ"
+                android:textColor="#fff"
+                android:gravity="center"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="#F7BC05"
+            android:gravity="top|center">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_margin="15dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ask"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#D1D6A9"
+                android:text="SORU SOR"
+                android:textColor="#fff"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#722809"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:gravity="top|center"
+            android:background="#FAF0E6">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/asi"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FBCEB1"
+                android:text="PET AŞI TAKİP"
+                android:textColor="#fff"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="#EE82EE"
+            android:gravity="top|center">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_margin="15dp"
+                android:layout_height="100dp"
+                android:background="@drawable/duyuru"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#991199"
+                android:text="DUYURULAR"
+                android:textColor="#fff"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
