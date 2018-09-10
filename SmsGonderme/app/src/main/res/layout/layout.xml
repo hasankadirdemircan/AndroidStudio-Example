@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#5436"
+    android:layout_margin="4dp">
+
+    <EditText
+        android:id="@+id/mesajIcerikEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/isimTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kişi İsmi : "/>
+    <TextView
+        android:id="@+id/telTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telefon Numarası : "/>
+    <Button
+        android:id="@+id/mesajGonderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mesaj Gönder"/>
+
+</LinearLayout>
